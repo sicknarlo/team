@@ -1,40 +1,37 @@
-# Express Mongoose Async/Await
+# Typescript Express Async/await Mongoose
 
 A boilerplate for creating an Express/Mongoose Node app in Typescript using Async/Await
  
 Includes:
 
+- Clean Async/Await code for easier readability
+- An async middleware for easily catching and handling errors (instead of wrapping everything in a try/catch)
 - Code coverage with Istanbul NYC
-- No need for MongoDB in develop mode.
 - Unit tests with Mockgoose
 - API documentation using Swagger
 
 ## Installation
 
 ```bash
-npm install
+yarn install
 
-npm start
+yarn start
 ```
 
-## URL
+## Testing
 
-* API endpoint: http://localhost:3003
-* Swagger UI: http://localhost:3003/docs
-* Swagger json: http://localhost:3003/api/swagger
+```bash
+yarn test
+```
 
-Swagger UI is based on 3.1.5 release.
+To get a code coverage report you can run:
 
-<table style="border: 0">
-  <tr>
-    <td><img width="200" src="http://www.innovic.io/assets/logo-small.png" /></td>
-    <td>
-      <ul>
-        <li>INNOVIC doo</li>
-        <li>Software consulting company for building full stack solutions.</li>
-        <li>Proficient in: NodeJS, TypeScript, Angular, MongoDB...</li>
-        <li><b>You have project for us? hello@innovic.io</b></li>
-      </ul>
-    </td>
-  </tr>
-</table>
+```bash
+yarn test:coverage
+```
+
+Then you can open your report as an html file using:
+
+```bash
+open ./coverage/index.html
+```
